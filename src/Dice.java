@@ -10,8 +10,8 @@ public class Dice {
     }
 
     public void roll() {
-        Random rand = new Random();
-        sideFacingUp = rand.nextInt(sides-1)+1;
+        randomGenerator = new Random();
+        sideFacingUp = randomGenerator.nextInt(sides-1)+1;
     }
     public int view() {
         return sideFacingUp;
